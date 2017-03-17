@@ -7,3 +7,5 @@ muutos tehty klooniin
 >>>>>>> 4e6420db3c1f9bc101cff17eb77af61c73d77d2f
 muutos todetakseni, että olen päivittänyt READMEn suoraan 
 GitHubiin ja nyt ei onnistu push, koska ensin pitäisi tehdä pull. 
+
+Nyt pitäisi onnistua, koska git pull tehty.

@@ -130,7 +130,7 @@ public class VarastoTest {
         if (string.equals(varasto.toString())) {
             ok = 0;
         }
-        assertEquals(0, ok, vertailuTarkkuus);
+        assertEquals(10, ok, vertailuTarkkuus);
         System.out.println("jepulis. Travista varten muutos.");
 
     }

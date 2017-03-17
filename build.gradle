@@ -34,16 +34,6 @@ dependencies {
 }
 
 
-// määritellään projektille coveralls-plugin
-jacocoTestReport {
-    reports {
-        xml.enabled = true // coveralls plugin depends on xml format report
-        html.enabled = true
-    }
-}
-
-
-
 
 // Define the main class for the application
 mainClassName = 'ohtu.ohtuvarasto.Main'
@@ -58,3 +48,14 @@ jar {
 
 // lisätään plugin
 apply plugin: "jacoco" 
+
+
+// määritellään projektille coveralls-plugin
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
+
+

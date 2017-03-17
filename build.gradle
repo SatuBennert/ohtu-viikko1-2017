@@ -27,6 +27,17 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+
 // Define the main class for the application
 mainClassName = 'ohtu.ohtuvarasto.Main'
 
+// konfiguraatio kertoo, mikä ohjelman luokista on pääohjelma 
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'ohtu.ohtuvarasto.Main'
+    }
+}
+
+// lisätään plugin
+apply plugin: "jacoco" 

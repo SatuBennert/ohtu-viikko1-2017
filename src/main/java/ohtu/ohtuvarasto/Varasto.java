@@ -51,12 +51,14 @@ public class Varasto {
     public void lisaaVarastoon(double maara) {
         if (maara < 0) // virhetilanteessa voidaan tehdä 
         {
+//            System.out.println("maara negatiivinen, pois heti.");
             return;       // tällainen pikapoistuminenkin!
         }
         if (maara <= paljonkoMahtuu()) // omia aksessoreita voi kutsua
         {
             saldo = saldo + maara;          // ihan suoraan sellaisinaan
         } else {
+//            System.out.println(" eipä mennyt putkeen");
             saldo = tilavuus;  // täyteen ja ylimäärä hukkaan!
         }
     }

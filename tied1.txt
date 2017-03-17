@@ -1,3 +1,7 @@
 muutos1
+<<<<<<< HEAD
 
 muutos3 
+=======
+muutos tehty klooniin
+>>>>>>> 4e6420db3c1f9bc101cff17eb77af61c73d77d2f

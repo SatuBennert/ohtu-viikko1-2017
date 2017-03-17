@@ -1,10 +1,4 @@
 language: java
 
-//Käytännössä pyydämme Travisia suorittamaan onnistuneen 
-// buildin (eli komennon gradle check) jälkeen gradle-komennon, 
-// joka ensin suorittaa testien kattavuusanalyysin JaCoCo:lla 
-// ja sen jälkeen lähettää tiedot coverallsiin
-//
-// generoidaan testiraprtti coverallsiin
 after_success:
 - ./gradlew jacocoTestReport coveralls

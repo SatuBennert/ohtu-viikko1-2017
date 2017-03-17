@@ -131,6 +131,7 @@ public class VarastoTest {
             ok = 0;
         }
         assertEquals(0, ok, vertailuTarkkuus);
+        System.out.println("jepulis. Travista varten muutos.");
 
     }
 }

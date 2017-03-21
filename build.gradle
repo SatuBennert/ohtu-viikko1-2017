@@ -58,4 +58,9 @@ jacocoTestReport {
     }
 }
 
-
+// viikko2 lisätty
+// Jos gradle-koodi lukee syötteitä komentoriviltä, 
+// tulee määrittelytietdostojen loppuun liittää seuraava
+run {
+    standardInput = System.in
+}

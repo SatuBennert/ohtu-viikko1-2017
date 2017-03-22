@@ -1,6 +1,13 @@
 
+
 lisätään haaraklooni - repossa pari uutta riviä samaan kohtaan, mitä
 lisäsin juuri alkuperäisessä repossa ja pushasin. 
+Lisätään tänne masterissa muutama rivi. 
+
+Konflikti korjattu. Kaikki rivit hyväksytty mukaan. Pitäisi löytyä
+pushin jälkeen GitHubissa. 
+
+>>>>>>> cb10304b52fd6ea3ff2888e74bad2fe10dba6357
 
 muutos1
 <<<<<<< HEAD

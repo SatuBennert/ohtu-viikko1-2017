@@ -17,3 +17,15 @@ mainClassName = 'ohtuesimerkki.Main'
 run {
     standardInput = System.in
 }
+// lisätään plugin
+apply plugin: "jacoco"
+
+
+// määritellään projektille coveralls-plugin
+jacocoTestReport {
+    reports {
+        xml.enabled = true // coveralls plugin depends on xml format report
+        html.enabled = true
+    }
+}
+

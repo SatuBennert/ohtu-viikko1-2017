@@ -8,9 +8,11 @@ import java.util.List;
 public class Statistics {
 
     private List<Player> players;
+    private Reader reader;
 
-    public Statistics() {
-        PlayerReader reader = new PlayerReader("http://nhlstatistics.herokuapp.com/players.txt");
+    public Statistics(Reader reader) {
+        this.reader = reader;
+//        PlayerReader reader = new PlayerReader("http://nhlstatistics.herokuapp.com/players.txt");
         players = reader.getPlayers();       
     }
 
@@ -37,6 +39,7 @@ public class Statistics {
     }
 
     public List<Player> topScorers(int howMany) {
+        howMany--; // lisäsin, koska paras in indeksissä 0
         Collections.sort(players);
         ArrayList<Player> topScorers = new ArrayList<Player>();
         Iterator<Player> playerIterator = players.iterator();

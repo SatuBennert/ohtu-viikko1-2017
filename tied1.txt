@@ -1,3 +1,7 @@
+
+lisätään haaraklooni - repossa pari uutta riviä samaan kohtaan, mitä
+lisäsin juuri alkuperäisessä repossa ja pushasin. 
+
 muutos1
 <<<<<<< HEAD
 

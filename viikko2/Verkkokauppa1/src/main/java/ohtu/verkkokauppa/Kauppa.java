@@ -1,19 +1,35 @@
 package ohtu.verkkokauppa;
 
-public class Kauppa {
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-    private Varasto varasto;
-    private Pankki pankki;
+public class Kauppa {
+    
+    private VarastoRajapinta varasto;
+//    private Varasto varasto;
+    private PankkiRajapinta pankki;
+//    private Pankki pankki;
     private Ostoskori ostoskori;
-    private Viitegeneraattori viitegeneraattori;
+    private ViitegeneraattoriRajapinta viitegeneraattori;
+//    private Viitegeneraattori viitegeneraattori;
     private String kaupanTili;
 
-    public Kauppa() {
-        varasto = Varasto.getInstance();
-        pankki = Pankki.getInstance();
-        viitegeneraattori = Viitegeneraattori.getInstance();
+//    public Kauppa() {
+//        varasto = Varasto.getInstance();
+//        pankki = Pankki.getInstance();
+//        viitegeneraattori = Viitegeneraattori.getInstance();
+//        kaupanTili = "33333-44455";
+//    }
+    public Kauppa(VarastoRajapinta vr, PankkiRajapinta pr, ViitegeneraattoriRajapinta vgr) {
+//        varasto = Varasto.getInstance();
+        varasto = vr;
+//        pankki = Pankki.getInstance();
+        pankki = pr;
+//        viitegeneraattori = Viitegeneraattori.getInstance();
+        viitegeneraattori = vgr;
         kaupanTili = "33333-44455";
     }
+    
 
     public void aloitaAsiointi() {
         ostoskori = new Ostoskori();

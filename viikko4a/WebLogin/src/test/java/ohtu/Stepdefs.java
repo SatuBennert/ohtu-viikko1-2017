@@ -75,8 +75,20 @@ public class Stepdefs {
     public void user_is_not_created_and_error_is_reported(String message) throws Throwable {
         assertTrue(driver.getPageSource().contains(message));
     }
-
     
+    @Given("^user with username \"([^\"]*)\" with password \"([^\"]*)\" is succesfully created$")
+    public void user_with_username_with_password_is_succesfully_created(String salasana, String password) throws Throwable {
+        System.out.println("NEW USER IS SELECTED");
+        new_user_is_selected();
+        System.out.println("SITTEN MUODOSTETAAN");
+        createUserWith(salasana, password, password);
+    }
+    
+    @Given("^user with username \"([^\"]*)\" and password \"([^\"]*)\" is unsuccesfully created$")
+    public void user_with_username_and_password_is_unsuccesfully_created(String salasana, String password) throws Throwable {
+        new_user_is_selected();
+        createUserWith(salasana, password, password);
+    }
 
     @Then("^user is not logged in and error message is given$")
     public void user_is_not_logged_in_and_error_message_is_given() throws Throwable {

@@ -14,6 +14,7 @@ public class Stepdefs {
     WebDriver driver = new ChromeDriver();
     String baseUrl = "http://localhost:4567";
     
+    
     @Given("^login is selected$")
     public void login_selected() throws Throwable {
         driver.get(baseUrl);
@@ -69,6 +70,7 @@ public class Stepdefs {
     }
         
     private void logInWith(String username, String password) {
+       
         assertTrue(driver.getPageSource().contains("Give your credentials to login"));
         WebElement element = driver.findElement(By.name("username"));
         element.sendKeys(username);

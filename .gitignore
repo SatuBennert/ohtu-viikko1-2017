@@ -2,3 +2,9 @@ build
 *.tmp
 /.nb-gradle/
 /viikko2/NhlStatistics1/.nb-gradle/
+/viikko4a/WebLogin/.nb-gradle/
+/viikko5a/VerkkokauppaSpring/.nb-gradle/
+/viikko5a/MockitoDemo/.nb-gradle/
+/viikko5a/MatkakorttiMockito/.nb-gradle/
+/viikko5a/IntJoukkoSovellus/.nb-gradle/
+/viikko5a/Tennis/.nb-gradle/

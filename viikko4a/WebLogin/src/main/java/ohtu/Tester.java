@@ -32,7 +32,10 @@ public class Tester {
 
         WebDriver driver = new ChromeDriver();
 
-        driver.get("http://localhost:4567");
+        driver.get("http://localhost:8080");
+      
+        //--
+               //--
 
         // Login testi, kun käyttäjätunnus on oikein ja salasana on väärin
         WebElement element = driver.findElement(By.linkText("login"));

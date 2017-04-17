@@ -78,9 +78,7 @@ public class Stepdefs {
     
     @Given("^user with username \"([^\"]*)\" with password \"([^\"]*)\" is succesfully created$")
     public void user_with_username_with_password_is_succesfully_created(String salasana, String password) throws Throwable {
-        System.out.println("NEW USER IS SELECTED");
         new_user_is_selected();
-        System.out.println("SITTEN MUODOSTETAAN");
         createUserWith(salasana, password, password);
     }
     

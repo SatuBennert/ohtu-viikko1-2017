@@ -1,4 +1,6 @@
 
+käytetään vko5 tehtävä 8 'toinen tiedosto'
+
 
 lisätään haaraklooni - repossa pari uutta riviä samaan kohtaan, mitä
 lisäsin juuri alkuperäisessä repossa ja pushasin. 
@@ -6,17 +8,5 @@ Lisätään tänne masterissa muutama rivi.
 
 Konflikti korjattu. Kaikki rivit hyväksytty mukaan. Pitäisi löytyä
 pushin jälkeen GitHubissa. 
-
->>>>>>> cb10304b52fd6ea3ff2888e74bad2fe10dba6357
-
-muutos1
-<<<<<<< HEAD
-
-muutos3 
-=======
-muutos tehty klooniin
->>>>>>> 4e6420db3c1f9bc101cff17eb77af61c73d77d2f
-muutos todetakseni, että olen päivittänyt READMEn suoraan 
-GitHubiin ja nyt ei onnistu push, koska ensin pitäisi tehdä pull. 
 
 Nyt pitäisi onnistua, koska git pull tehty.
